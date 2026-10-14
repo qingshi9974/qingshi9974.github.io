@@ -2,14 +2,11 @@
 
 A static personal academic website. Open `index.html` locally to preview it. No build step or package installation is required.
 
-## Publish with GitHub Pages
+## Published site
 
-1. Create the public GitHub repository `qingshi9974.github.io`.
-2. Upload the files in this folder to the repository root, or push them with Git.
-3. In the repository, open **Settings → Pages**. Under **Build and deployment**, select **Deploy from a branch**, then choose `main` and `/ (root)`.
-4. Visit `https://qingshi9974.github.io/` after GitHub finishes deploying.
+The site is live at [qingshi9974.github.io](https://qingshi9974.github.io/) and is published from the `main` branch of [qingshi9974/qingshi9974.github.io](https://github.com/qingshi9974/qingshi9974.github.io).
 
-For a repository with another name, the site URL is usually `https://qingshi9974.github.io/REPOSITORY_NAME/`.
+To update it, edit the files locally, preview `index.html`, then run `git add .`, `git commit -m "Update homepage"`, and `git push` from this directory. GitHub Pages republishes the site after the push.
 
 ## Customize
 
