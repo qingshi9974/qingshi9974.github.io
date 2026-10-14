@@ -1,0 +1,76 @@
+:root {
+  color-scheme: light;
+  --text: #242424;
+  --muted: #62676d;
+  --link: #245a9b;
+  --line: #e3e5e8;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: #fff;
+  color: var(--text);
+  font: 16px/1.68 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+a:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; }
+.page { max-width: 890px; margin: 0 auto; padding: 50px 28px 40px; }
+.site-header { padding-bottom: 30px; border-bottom: 1px solid var(--line); }
+.intro-row { display: flex; align-items: flex-start; justify-content: space-between; gap: 24px; }
+.identity h1 { margin: 0; font-size: 32px; line-height: 1.2; letter-spacing: -.03em; font-weight: 650; }
+.identity p { margin: 6px 0 0; color: var(--muted); }
+.portrait { display: block; width: 150px; height: 152px; object-fit: cover; }
+nav { display: flex; flex-wrap: wrap; gap: 8px 22px; margin-top: 22px; font-size: 14px; }
+main { padding-top: 16px; }
+section { margin: 38px 0 50px; scroll-margin-top: 24px; }
+h2 { margin: 0 0 16px; font-size: 21px; line-height: 1.3; font-weight: 650; }
+p { margin: 0 0 15px; }
+.profile-links { margin-top: 17px; }
+.email-reveal { border: 0; padding: 0; background: none; color: var(--link); font: inherit; cursor: pointer; }
+.email-reveal:hover { text-decoration: underline; }
+.email-reveal:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; }
+.interests { margin: 0; padding-left: 22px; }
+.interests li { margin: 5px 0; }
+.section-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+.section-heading a { font-size: 14px; white-space: nowrap; }
+.publications-list { padding: 0; margin: 5px 0 0; list-style: none; }
+.publications-list li { display: grid; grid-template-columns: 55px 160px minmax(0, 1fr); gap: 18px; padding: 20px 0; border-bottom: 1px solid var(--line); align-items: start; }
+.publications-list li:last-child { border-bottom: 0; }
+.paper-year { color: var(--muted); font-size: 14px; padding-top: 2px; }
+.paper-thumbnail { display: block; width: 160px; height: 105px; overflow: hidden; border: 1px solid var(--line); border-radius: 3px; background: #f7f8f9; }
+.paper-thumbnail img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.paper-content h3 { margin: 0 0 5px; font-size: 16px; line-height: 1.5; font-weight: 650; }
+.paper-content p { margin: 0; font-size: 14px; line-height: 1.55; }
+.authors { color: #4d5359; }
+.authors strong { color: var(--text); font-weight: 650; }
+.venue { margin-top: 5px !important; color: var(--muted); }
+#education { padding-top: 26px; border-top: 1px solid var(--line); }
+.history-list { margin: 0; }
+.history-list div { display: grid; grid-template-columns: 130px 1fr; gap: 18px; padding: 12px 0; align-items: start; }
+.history-list dt { color: var(--muted); }
+.background-logo { display: block; width: 42px; height: 42px; flex: 0 0 42px; }
+.background-logo img { display: block; width: 42px; height: 42px; object-fit: contain; }
+.history-list dd { display: flex; align-items: flex-start; gap: 18px; margin: 0; }
+.history-list strong { font-weight: 650; }
+footer { padding-top: 24px; border-top: 1px solid var(--line); color: #85898d; font-size: 13px; }
+
+@media (max-width: 600px) {
+  .page { padding: 28px 20px 35px; }
+  .identity h1 { font-size: 29px; }
+  .portrait { width: 108px; height: 109px; }
+  nav { gap: 5px 17px; }
+  .section-heading { align-items: start; flex-direction: column; gap: 0; }
+  .section-heading h2 { margin-bottom: 3px; }
+  .publications-list li { grid-template-columns: 110px minmax(0, 1fr); gap: 8px 14px; }
+  .paper-year { grid-column: 1 / -1; }
+  .paper-thumbnail { width: 110px; height: 82px; }
+  .history-list div { grid-template-columns: 1fr; gap: 5px; padding: 14px 0; }
+  .history-list dd { gap: 12px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
