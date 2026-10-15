@@ -12,6 +12,8 @@ To update it, edit the files locally, preview `index.html`, then run `git add .`
 
 Edit `index.html` to update the bio, research descriptions, and publications. The header photo is `scholar-portrait.jpg`, copied from Han Li's Google Scholar profile; replace that file to use a different portrait. The email link is created only after a visitor clicks “Email (click to reveal)”; this deters simple address harvesters but cannot stop bots that run JavaScript and click the button. `styles.css` controls the design.
 
+The footer displays a [Flag Counter](https://flagcounter.me/details/kJ6) with pageviews and country flags. Clicking it opens the visitor statistics, including a map. Counts begin when the widget is installed. Its management password is not stored in this repository.
+
 The biography, education, experience, and current research directions reflect details provided by Han Li. The header portrait was downloaded from Han Li's Google Scholar profile; selected publication details were checked against linked original papers. Review the publication selection before publishing.
 
 ## Logo sources
